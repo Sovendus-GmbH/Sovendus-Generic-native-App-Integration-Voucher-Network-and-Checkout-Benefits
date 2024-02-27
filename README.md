@@ -1,5 +1,6 @@
 # Sovendus generic native App integration for Voucher Network and Checkout Benefits
 
+This documentation is for mobile Apps where the order success page is native.
 
 1. Create a webview component with the following HTML:
    ```html
