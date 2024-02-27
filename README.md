@@ -1,4 +1,4 @@
-# Sovendus Generic native App Integration for Voucher Network and Checkout Benefits
+# Sovendus generic native App integration for Voucher Network and Checkout Benefits
 
 
 1. Create a webview component with the following HTML:
