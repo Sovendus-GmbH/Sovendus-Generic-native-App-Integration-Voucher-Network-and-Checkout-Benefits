@@ -25,7 +25,7 @@ This documentation is for mobile Apps where the order success page is native.
              orderValue: "$netOrderValue",
              orderCurrency: "$currencyCode",
              usedCouponCode: "$usedCouponCode",
-             integrationType: "genericnative-1.0.1"
+             integrationType: "genericnative-1.0.1",
            });
          }
          if ("$trafficMediumNumberCheckoutBenefits") {
@@ -64,8 +64,13 @@ This documentation is for mobile Apps where the order success page is native.
    b. Prevent all navigation requests, catch the javascript event "openInNativeBrowser" and open the url in the event in the native browser. This is how you can catch the event in javascript and get the URL it should navigate to:
 
    ```javascript
-   window.addEventListener("openInNativeBrowser", (event) => {
-     console.log("test", event.detail.url);
+   window.sovApi = "v1";
+   window.addEventListener("message", (event) => {
+     if (event.data.channel === "sovendus:integration") {
+       if (event.data.payload.action === "openInNativeBrowser") {
+         console.log("URL to open", event.data.payload.url);
+       }
+     }
    });
    ```
 
