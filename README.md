@@ -25,7 +25,7 @@ This documentation is for mobile Apps where the order success page is native.
              orderValue: "$netOrderValue",
              orderCurrency: "$currencyCode",
              usedCouponCode: "$usedCouponCode",
-             integrationType: "genericnative-1.0.1",
+             integrationType: "genericnative-1.1.0",
            });
          }
          if ("$trafficMediumNumberCheckoutBenefits") {
