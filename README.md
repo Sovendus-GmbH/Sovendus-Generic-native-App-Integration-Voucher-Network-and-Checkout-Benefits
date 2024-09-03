@@ -58,7 +58,7 @@ This documentation is for mobile Apps where the order success page is native.
    </html>
    ```
 2. Make sure all variables in the HTML starting with a $ are defined
-[Information about the mandatory Parameters / Data](https://developer-hub.sovendus.com/Voucher-Network-Checkout-Benefits/Parameter)
+[Click here for detailed information on the parameters and which ones are required.](https://developer-hub.sovendus.com/Voucher-Network-Checkout-Benefits/Parameter)
 
 4. Clicks on external links need to be forwarded to the native browser, this can be done with one of the following ways:\
    a. Prevent all navigation requests and forward the URL it tried to navigate to, to the native browser
