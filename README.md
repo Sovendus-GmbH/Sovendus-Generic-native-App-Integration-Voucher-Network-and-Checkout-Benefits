@@ -10,31 +10,21 @@ This documentation is for mobile Apps where the order success page is native.
        <meta name="viewport" content="initial-scale=1" />
      </head>
      <body id="body">
-       <div id="sovendus-voucher-banner"></div>
-       <div id="sovendus-checkout-benefits-banner"></div>
+       <div id="sovendus-container"></div>
        <script type="text/javascript">
          window.sovIframes = window.sovIframes || [];
-         if ("$trafficMediumNumberVoucherNetwork") {
-           window.sovIframes.push({
-             trafficSourceNumber: "$trafficSourceNumber",
-             trafficMediumNumber: "$trafficMediumNumberVoucherNetwork",
-             iframeContainerId: "sovendus-voucher-banner",
-             timestamp: "$orderUnixTime",
-             sessionId: "$sessionId",
-             orderId: "$orderId",
-             orderValue: "$netOrderValue",
-             orderCurrency: "$currencyCode",
-             usedCouponCode: "$usedCouponCode",
-             integrationType: "genericnative-1.1.0",
-           });
-         }
-         if ("$trafficMediumNumberCheckoutBenefits") {
-           window.sovIframes.push({
-             trafficSourceNumber: "$trafficSourceNumber",
-             trafficMediumNumber: "$trafficMediumNumberCheckoutBenefits",
-             iframeContainerId: "sovendus-checkout-benefits-banner",
-           });
-         }
+         window.sovIframes.push({
+          trafficSourceNumber: "$trafficSourceNumber",
+          trafficMediumNumber: "$trafficMediumNumber",
+          iframeContainerId: "sovendus-container",
+          timestamp: "$orderUnixTime",
+          sessionId: "$sessionId",
+          orderId: "$orderId",
+          orderValue: "$netOrderValue",
+          orderCurrency: "$currencyCode",
+          usedCouponCode: "$usedCouponCode",
+          integrationType: "genericnative-1.1.0",
+         });
          window.sovConsumer = {
            consumerSalutation: "$salutation",
            consumerFirstName: "$firstName",
@@ -42,6 +32,7 @@ This documentation is for mobile Apps where the order success page is native.
            consumerEmail: "$email",
            consumerPhone: "$phone",
            consumerYearOfBirth: "$yearOfBirth",
+           consumerDateOfBirth: "01.12.2020",
            consumerStreet: "$street",
            consumerStreetNumber: "$streetNumber",
            consumerZipcode: "$zipcode",
